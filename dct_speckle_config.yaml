@@ -1,0 +1,25 @@
+conditioning:
+  method: ps
+  params:
+    scale: 0.3
+
+data:
+  name: ffhq
+  root: ./data/samples/
+
+measurement:
+  operator:
+    name: dct
+    mask_rate: 0.8
+    mask_const_en: 0.0
+    std_z: 0.0
+    num_ite_MC: 10
+
+  
+  noise: 
+    name: speckle
+    speckle_mean: 1.0 #need to change the grad in Monte Carlo if mean=1
+    sigma_w: 1.0
+    sigma_z: 0.025
+
+##############################################################################################################
