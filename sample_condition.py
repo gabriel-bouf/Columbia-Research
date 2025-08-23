@@ -103,7 +103,8 @@ def main():
             # Forward measurement model (Ax + n)
             y = operator.forward(ref_img, mask=mask)
             y_n = noiser(y)
-
+            
+    ################################################################################################################################################################
         elif measure_config['noise']['name'] == 'speckle':
             #mean 1 
             #y = operator.forward(ref_img+ref_img* torch.randn(ref_img.shape, device=device)*measure_config['noise']['sigma_w'])
@@ -118,7 +119,7 @@ def main():
             y_n = noiser(y)
             print("Noise added to the measurement.")
 
-
+    ################################################################################################################################################################
         else: 
             # Forward measurement model (Ax + n)
             y = operator.forward(ref_img)
