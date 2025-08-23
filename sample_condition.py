@@ -106,19 +106,12 @@ def main():
             
     ################################################################################################################################################################
         elif measure_config['noise']['name'] == 'speckle':
-            #mean 1 
-            #y = operator.forward(ref_img+ref_img* torch.randn(ref_img.shape, device=device)*measure_config['noise']['sigma_w'])
-            #mean 0()
-            # same seed
-            torch.manual_seed(0)
-
+            #torch.manual_seed(0)
             speckle_gt=ref_img*(measure_config['noise']['speckle_mean']+ torch.randn(ref_img.shape, device=device)*measure_config['noise']['sigma_w'])
             print("pixels values of speckle_gt",speckle_gt.max(), speckle_gt.min())
             y = operator.forward(speckle_gt)
             print("Speckle noise applied to the measurement.")
             y_n = noiser(y)
-            print("Noise added to the measurement.")
-
     ################################################################################################################################################################
         else: 
             # Forward measurement model (Ax + n)
