@@ -1,3 +1,5 @@
+#To put in diffusion-posterior-sampling/configs
+
 conditioning:
   method: ps
   params:
