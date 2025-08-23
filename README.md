@@ -16,8 +16,7 @@ dps/
 │   └── inpainting_config.yaml        
 ├── guided_diffusion/
 │   ├── condition_methods.py
-│   ├── measurements.py
-│   └── coherent_imaging.py
+│   └── measurements.py
 ├── models/           # Pre-trained model checkpoints
 │   └── ffhq_10m.pt
 ├── results/              # Output directory
