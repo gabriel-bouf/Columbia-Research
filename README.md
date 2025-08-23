@@ -19,7 +19,7 @@ dps/
 │   ├── measurements.py
 │   └── coherent_imaging.py
 ├── models/           # Pre-trained model checkpoints
-│   └── ffhq_p2.pt
+│   └── ffhq_10m.pt
 ├── results/              # Output directory
 ├── sample_condition.py
 └── sample_condition.sh
@@ -31,12 +31,12 @@ dps/
 
 **FFHQ Checkpoint**: Download the pre-trained $256\times256$ FFHQ diffusion model checkpoint from:
 - [OpenAI's guided-diffusion releases](https://github.com/openai/guided-diffusion)
-- Direct link: `ffhq_p2.pt` (256x256 FFHQ unconditional model)
+- Direct link:  [`ffhq_10m.pt`](https://drive.google.com/drive/folders/1jElnRoFv7b31fG0v6pTSQkelbSX3xGZh)
 
 Place the checkpoint in the `models/` directory:
 ```
-diffusion-posterior-sampling/models/
-└── ffhq_p2.pt
+dps/models/
+└── ffhq_10m.pt
 ```
 
 
