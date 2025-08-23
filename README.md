@@ -1,4 +1,4 @@
-# Columbia-Research - Diffusion Posterior Sampling (DPS) Implementation
+# Columbia Research - Diffusion Posterior Sampling (DPS) Implementation
 
 This repository contains an implementation of Diffusion Posterior Sampling (DPS) for solving inverse problems using pre-trained diffusion models.
 
