@@ -1,3 +1,4 @@
+#To put in diffusion-posterior-sampling/
 #!/bin/bash
 
 #SBATCH --account=stats         
